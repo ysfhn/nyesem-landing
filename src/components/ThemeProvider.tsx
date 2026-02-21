@@ -25,15 +25,9 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
   useEffect(() => {
     setMounted(true);
     const stored = localStorage.getItem('nyesem-theme') as Theme | null;
-    if (stored) {
-      setTheme(stored);
-      document.documentElement.setAttribute('data-theme', stored);
-    } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initial = prefersDark ? 'dark' : 'light';
-      setTheme(initial);
-      document.documentElement.setAttribute('data-theme', initial);
-    }
+    const initial = stored || 'dark';
+    setTheme(initial);
+    document.documentElement.setAttribute('data-theme', initial);
   }, []);
 
   const toggleTheme = () => {
