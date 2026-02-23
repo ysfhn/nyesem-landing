@@ -95,14 +95,14 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="relative py-24 md:py-32 bg-section-warm overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-section-warm overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-10" />
 
       {/* Top divider */}
       <div className="absolute top-0 left-0 right-0 section-divider-warm" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimateOnScroll animation="fade-up" className="text-center mb-16">
+        <AnimateOnScroll animation="fade-up" className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white mb-4">
             Rakamlarla <span className="gradient-text">Nyesem</span>
           </h2>
@@ -116,8 +116,7 @@ export default function Stats() {
             <AnimateOnScroll key={stat.label} animation="fade-up" delay={index * 100}>
               <div className="stat-card glass rounded-3xl p-8 text-center border border-white/5 hover:border-white/10 transition-all duration-300 group">
                 {/* Icon with gradient bg */}
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${stat.color} bg-opacity-20 flex items-center justify-center text-3xl mx-auto mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
-                  style={{ background: `linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02))` }}
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-3xl mx-auto mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
                   <span aria-hidden="true">{stat.icon}</span>
                 </div>

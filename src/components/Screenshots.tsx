@@ -405,7 +405,7 @@ export default function Screenshots() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="screenshots" className="relative py-24 md:py-32 bg-dark-900 overflow-hidden">
+    <section id="screenshots" className="relative py-16 md:py-24 bg-dark-900 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-grid opacity-10" />
 
@@ -442,7 +442,7 @@ export default function Screenshots() {
                   className={`w-full text-left p-5 rounded-2xl transition-all duration-300 border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 ${
                     active === index
                       ? 'glass border-brand-400/20 shadow-lg shadow-brand-400/5'
-                      : 'bg-transparent border-transparent hover:bg-white/3 hover:border-white/5'
+                      : 'bg-transparent border-transparent hover:bg-white/5 hover:border-white/5'
                   }`}
                 >
                   <div className="flex items-start gap-4">

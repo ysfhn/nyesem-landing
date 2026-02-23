@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
@@ -121,7 +121,7 @@ export default function Navbar() {
         id="mobile-menu"
         role="region"
         aria-label="Mobil navigasyon menüsü"
-        className={`md:hidden overflow-hidden transition-all duration-400 ${
+        className={`md:hidden overflow-hidden transition-all duration-300 ${
           mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

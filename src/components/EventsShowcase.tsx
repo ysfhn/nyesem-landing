@@ -32,7 +32,7 @@ export default function EventsShowcase() {
   const [activeTab, setActiveTab] = useState<'special' | 'events'>('special');
 
   return (
-    <section id="events" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="events" className="relative py-16 md:py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-section-warm" />
       <div className="absolute inset-0 bg-grid opacity-10" />
@@ -42,7 +42,7 @@ export default function EventsShowcase() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <AnimateOnScroll animation="fade-up" className="text-center mb-20">
+        <AnimateOnScroll animation="fade-up" className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-pink-500/20 mb-6">
             <span className="text-sm">📅</span>
             <span className="text-sm text-pink-300">Etkinlikler & Özel Günler</span>
@@ -60,7 +60,7 @@ export default function EventsShowcase() {
         </AnimateOnScroll>
 
         {/* Feature 1: Special Days + Phone Mockup */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-32">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <AnimateOnScroll animation="fade-right">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-rose-500/20 mb-6">
@@ -90,7 +90,7 @@ export default function EventsShowcase() {
                     className={`p-3 rounded-2xl border transition-all duration-300 text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 ${
                       activeDay === index
                         ? `glass ${day.borderColor} shadow-lg scale-[1.02]`
-                        : 'bg-white/3 border-white/5 hover:bg-white/5'
+                        : 'bg-white/5 border-white/5 hover:bg-white/5'
                     }`}
                   >
                     <span className="text-2xl block mb-1">{day.icon}</span>
@@ -173,7 +173,7 @@ export default function EventsShowcase() {
                       { days: '3 gün önce', status: '⏳', label: 'Menü seçimini tamamla' },
                       { days: '1 gün önce', status: '⏳', label: 'Son kontrol & hatırlatma' },
                     ].map((reminder) => (
-                      <div key={reminder.days} className="flex items-center gap-2 bg-white/3 rounded-lg p-2">
+                      <div key={reminder.days} className="flex items-center gap-2 bg-white/5 rounded-lg p-2">
                         <span className="text-xs">{reminder.status}</span>
                         <div className="flex-1">
                           <p className="text-[10px] text-white">{reminder.label}</p>
@@ -212,7 +212,7 @@ export default function EventsShowcase() {
         </div>
 
         {/* Feature 2: Events Hub */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Phone Mockup: Events */}
           <AnimateOnScroll animation="fade-right" className="flex justify-center order-2 lg:order-1">
             <div className="relative" aria-hidden="true">

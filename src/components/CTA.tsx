@@ -4,7 +4,7 @@ import AnimateOnScroll from './AnimateOnScroll';
 
 export default function CTA() {
   return (
-    <section id="download" className="relative py-24 md:py-32 bg-section-warm overflow-hidden">
+    <section id="download" className="relative py-12 md:py-20 bg-section-warm overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-grid opacity-10" />
@@ -70,13 +70,13 @@ export default function CTA() {
                   Güvenli & Şifreli
                 </div>
                 <div className="flex items-center gap-2 text-sm text-dark-400">
-                  <svg className="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   Ücretsiz Başlangıç
                 </div>
                 <div className="flex items-center gap-2 text-sm text-dark-400">
-                  <svg className="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                   Hızlı Kurulum

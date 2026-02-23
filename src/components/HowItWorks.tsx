@@ -43,7 +43,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative py-24 md:py-32 bg-section-cool">
+    <section id="how-it-works" className="relative py-16 md:py-24 bg-section-cool">
       {/* Background */}
       <div className="absolute inset-0 bg-grid opacity-10" />
 
@@ -52,7 +52,7 @@ export default function HowItWorks() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <AnimateOnScroll animation="fade-up" className="text-center mb-16 md:mb-20">
+        <AnimateOnScroll animation="fade-up" className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-purple-500/20 mb-6">
             <span className="text-sm text-dark-200">4 adımda başla</span>
           </div>

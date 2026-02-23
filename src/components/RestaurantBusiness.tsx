@@ -56,7 +56,7 @@ const stats = [
 
 export default function RestaurantBusiness() {
   return (
-    <section id="restaurants" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="restaurants" className="relative py-16 md:py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800/30 to-dark-900" />
       <div className="absolute inset-0 bg-grid opacity-10" />
@@ -66,7 +66,7 @@ export default function RestaurantBusiness() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <AnimateOnScroll animation="fade-up" className="text-center mb-20">
+        <AnimateOnScroll animation="fade-up" className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-orange-500/20 mb-6">
             <span className="text-sm">🏪</span>
             <span className="text-sm text-orange-300">Restoranlar İçin</span>
@@ -84,7 +84,7 @@ export default function RestaurantBusiness() {
         </AnimateOnScroll>
 
         {/* Main Feature: Left Text, Right Mockup */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <AnimateOnScroll animation="fade-right">
             <div>
               <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-6">
@@ -207,8 +207,8 @@ export default function RestaurantBusiness() {
         </div>
 
         {/* Benefits Grid */}
-        <AnimateOnScroll animation="fade-up" className="mb-24">
-          <div className="text-center mb-12">
+        <AnimateOnScroll animation="fade-up" className="mb-12">
+          <div className="text-center mb-10">
             <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-4">
               Neden{' '}
               <span className="gradient-text">Nyesem?</span>
@@ -234,7 +234,7 @@ export default function RestaurantBusiness() {
         </AnimateOnScroll>
 
         {/* Stats Row */}
-        <AnimateOnScroll animation="fade-up" className="mb-24">
+        <AnimateOnScroll animation="fade-up" className="mb-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {stats.map((s) => (
               <div key={s.label} className="glass rounded-2xl p-6 border border-white/5 text-center group hover:border-brand-400/20 transition-all">

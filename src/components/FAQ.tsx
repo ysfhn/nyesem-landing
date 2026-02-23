@@ -50,7 +50,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="relative py-24 md:py-32 bg-dark-900">
+    <section id="faq" className="relative py-16 md:py-24 bg-dark-900">
       <div className="absolute inset-0 bg-grid opacity-10" />
 
       {/* Top divider */}
@@ -119,7 +119,7 @@ export default function FAQ() {
                   id={`faq-answer-${index}`}
                   role="region"
                   aria-labelledby={`faq-question-${index}`}
-                  hidden={openIndex !== index}
+                  aria-hidden={openIndex !== index}
                   className={`overflow-hidden transition-all duration-300 ${
                     openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}

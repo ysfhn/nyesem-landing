@@ -73,7 +73,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-24 md:py-32 bg-dark-900 overflow-hidden">
+    <section id="testimonials" className="relative py-16 md:py-24 bg-dark-900 overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-10" />
 
       {/* Top divider */}
@@ -99,7 +99,7 @@ export default function Testimonials() {
           {testimonials.map((t, index) => (
             <AnimateOnScroll key={t.name} animation="fade-up" delay={index * 80}>
               <div
-                className={`testimonial-card glass rounded-3xl p-7 border border-white/5 ${t.accentBorder} transition-all duration-400 group h-full relative overflow-hidden`}
+                className={`testimonial-card glass rounded-3xl p-7 border border-white/5 ${t.accentBorder} transition-all duration-300 group h-full relative overflow-hidden`}
               >
                 {/* Stars */}
                 <div className="flex items-center gap-1 mb-4 relative z-10" role="img" aria-label={`${t.rating} üzerinden 5 yıldız`}>

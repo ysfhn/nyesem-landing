@@ -123,21 +123,14 @@ body {
 
 
 
-
-
-
-
-/* Section divider aliases — all map to the simple divider */
+/* Section dividers */
+.section-divider,
 .section-divider-warm,
 .section-divider-blue,
 .section-divider-multi {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(244, 199, 36, 0.2), transparent);
 }
-
-
-
-
 
 
 
@@ -194,12 +187,6 @@ body {
     linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
 }
 
-/* Section divider */
-.section-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(244, 199, 36, 0.2), transparent);
-}
-
 /* Feature card hover */
 .feature-card {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -242,10 +229,6 @@ body {
   width: 80%;
 }
 
-
-
-
-
 /* Marquee animation */
 @keyframes marquee {
   0% { transform: translateX(0%); }
@@ -268,12 +251,6 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-/* Counter animation */
-@keyframes countUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive phone sizes */

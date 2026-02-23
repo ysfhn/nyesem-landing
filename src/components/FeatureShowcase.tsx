@@ -4,14 +4,14 @@ import AnimateOnScroll from './AnimateOnScroll';
 
 export default function FeatureShowcase() {
   return (
-    <section className="relative py-24 md:py-32 bg-section-cool overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-section-cool overflow-hidden">
 
       {/* Top divider */}
       <div className="absolute top-0 left-0 right-0 section-divider-blue" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Feature 1: AI Menu Analysis */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-32">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <AnimateOnScroll animation="fade-right">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-blue-500/20 mb-6">
@@ -103,7 +103,7 @@ export default function FeatureShowcase() {
         </div>
 
         {/* Feature 2: Gourmet Level */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-32">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <AnimateOnScroll animation="fade-right" className="flex justify-center order-2 lg:order-1">
             <div className="relative" aria-hidden="true">
               <div className="glass rounded-3xl p-6 relative z-10 max-w-sm border border-brand-400/10">
@@ -150,7 +150,7 @@ export default function FeatureShowcase() {
                     <div
                       key={i}
                       className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg ${
-                        i <= 1 ? 'bg-white/10' : 'bg-white/3 opacity-40'
+                        i <= 1 ? 'bg-white/10' : 'bg-white/5 opacity-40'
                       }`}
                     >
                       {emoji}
@@ -198,7 +198,7 @@ export default function FeatureShowcase() {
         </div>
 
         {/* Feature 3: Social */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <AnimateOnScroll animation="fade-right">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-green-500/20 mb-6">
@@ -271,7 +271,7 @@ export default function FeatureShowcase() {
                       { user: '🧑 Mehmet', msg: 'İtalyan restoran olsun mu?', time: '19:46' },
                       { user: '👨 Can', msg: 'Harika fikir! Oy veriyorum 👍', time: '19:47' },
                     ].map((chat, i) => (
-                      <div key={i} className="bg-white/3 rounded-lg p-2">
+                      <div key={i} className="bg-white/5 rounded-lg p-2">
                         <div className="flex items-center justify-between mb-0.5">
                           <span className="text-[10px] text-dark-300 font-medium">{chat.user}</span>
                           <span className="text-[8px] text-dark-500">{chat.time}</span>

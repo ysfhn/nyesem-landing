@@ -85,7 +85,7 @@ export default function TravelShowcase() {
   const [activePhraseIndex, setActivePhraseIndex] = useState(0);
 
   return (
-    <section id="travel" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="travel" className="relative py-16 md:py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800/50 to-dark-900" />
       <div className="absolute inset-0 bg-grid opacity-10" />
@@ -95,7 +95,7 @@ export default function TravelShowcase() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <AnimateOnScroll animation="fade-up" className="text-center mb-20">
+        <AnimateOnScroll animation="fade-up" className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-sky-500/20 mb-6">
             <span className="text-sm">✈️</span>
             <span className="text-sm text-sky-300">Gastronomi Seyahati</span>
@@ -113,7 +113,7 @@ export default function TravelShowcase() {
         </AnimateOnScroll>
 
         {/* Main Travel Feature: Destinations + Phone Mockup */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-32">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <AnimateOnScroll animation="fade-right">
             <div>
               <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-4">
@@ -137,7 +137,7 @@ export default function TravelShowcase() {
                     className={`relative p-3 rounded-2xl border transition-all duration-300 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 ${
                       activeDestination === index
                         ? 'glass border-brand-400/30 shadow-lg shadow-brand-400/5 scale-[1.02]'
-                        : 'bg-white/3 border-white/5 hover:bg-white/5 hover:border-white/10'
+                        : 'bg-white/5 border-white/5 hover:bg-white/5 hover:border-white/10'
                     }`}
                   >
                     <div className="flex items-center gap-2 mb-2">
@@ -268,7 +268,7 @@ export default function TravelShowcase() {
         </div>
 
         {/* Feature Grid: 8 Travel Features */}
-        <AnimateOnScroll animation="fade-up" className="mb-32">
+        <AnimateOnScroll animation="fade-up" className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-4">
               Seyahat Planlayıcının{' '}
@@ -320,7 +320,7 @@ export default function TravelShowcase() {
                       className={`w-full text-left rounded-xl p-3 border transition-all duration-300 ${
                         activePhraseIndex === index
                           ? 'bg-cyan-500/10 border-cyan-500/20'
-                          : 'bg-white/3 border-white/5 hover:bg-white/5'
+                          : 'bg-white/5 border-white/5 hover:bg-white/5'
                       }`}
                     >
                       <div className="flex items-center justify-between mb-1">
