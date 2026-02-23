@@ -16,23 +16,44 @@ const travelFeatures = [
   {
     icon: '🍽️',
     title: 'Yerel Lezzet Veritabanı',
-    description: '15+ şehir, 100+ yerel yemek ve içecek. Her birinin açıklaması, fiyatı, etiketleri ve görselleri ile.',
+    description: '15+ şehir, 100+ yerel yemek ve içecek. Her birinin açıklaması, fiyatı, etiketleri ve görselleri ile detaylı gastronomi rehberi.',
     color: 'border-orange-500/20',
     iconBg: 'bg-orange-500/15',
+    accentColor: 'text-orange-400',
+    details: [
+      { icon: '📋', text: 'Detaylı yemek açıklamaları ve görseller' },
+      { icon: '💰', text: 'Ortalama fiyat aralıkları' },
+      { icon: '🏷️', text: 'Mutfak türü ve etiket filtreleri' },
+      { icon: '📍', text: 'En iyi nerede yenir önerileri' },
+    ],
   },
   {
     icon: '⭐',
     title: 'Michelin Restoran Rehberi',
-    description: '8 ülkede Michelin yıldızlı restoranlar. Doğrudan Michelin rehberine bağlantılar.',
+    description: '8 ülkede Michelin yıldızlı restoranlar. Doğrudan Michelin rehberine bağlantılar ve detaylı restoran bilgileri.',
     color: 'border-red-500/20',
     iconBg: 'bg-red-500/15',
+    accentColor: 'text-red-400',
+    details: [
+      { icon: '🌟', text: '1, 2 ve 3 yıldızlı restoranlar' },
+      { icon: '🔗', text: 'Michelin rehberine direkt bağlantılar' },
+      { icon: '📖', text: 'Menü özetleri ve fiyat aralıkları' },
+      { icon: '📞', text: 'Kolay rezervasyon bağlantıları' },
+    ],
   },
   {
     icon: '🗣️',
     title: '8 Dilde Menü Çevirileri',
-    description: '"Hesap alabilir miyim?" gibi restoran cümlelerini Fransızca, İtalyanca, Japonca, İspanyolca ve daha fazlasında.',
+    description: 'Fransızca, İtalyanca, Japonca, İspanyolca ve daha fazlasında restoran cümleleri ve menü çevirileri.',
     color: 'border-cyan-500/20',
     iconBg: 'bg-cyan-500/15',
+    accentColor: 'text-cyan-400',
+    details: [
+      { icon: '📖', text: 'Sipariş, hesap, alerji bildirimi cümleleri' },
+      { icon: '🔊', text: 'Sesli telaffuz desteği' },
+      { icon: '🍽️', text: 'Yerel yemek isimlerinin Türkçe karşılıkları' },
+      { icon: '⚠️', text: '"Fıstık alerjim var" gibi kritik çeviriler' },
+    ],
   },
   {
     icon: '🎉',
@@ -40,13 +61,27 @@ const travelFeatures = [
     description: 'Dünya çapında yemek festivallerinin tarihleri ve detayları. Seyahatinizi festival takvimine göre planlayın.',
     color: 'border-pink-500/20',
     iconBg: 'bg-pink-500/15',
+    accentColor: 'text-pink-400',
+    details: [
+      { icon: '📅', text: 'Festival tarihleri ve takvimi' },
+      { icon: '🎪', text: 'Festival detayları ve programları' },
+      { icon: '🎫', text: 'Bilet bilgileri ve bağlantılar' },
+      { icon: '📍', text: 'Konum ve ulaşım bilgileri' },
+    ],
   },
   {
     icon: '💱',
     title: 'Para Birimi & Bütçe',
-    description: 'Hedef ülkenin para birimi, ortalama yemek fiyatları ve bütçe ipuçları.',
+    description: 'Hedef ülkenin para birimi, ortalama yemek fiyatları ve bütçe ipuçları ile seyahat planlaması.',
     color: 'border-green-500/20',
     iconBg: 'bg-green-500/15',
+    accentColor: 'text-green-400',
+    details: [
+      { icon: '💵', text: 'Güncel döviz kurları' },
+      { icon: '🍽️', text: 'Ortalama yemek fiyatları' },
+      { icon: '💡', text: 'Bütçe dostu ipuçları' },
+      { icon: '📊', text: 'Şehir bazlı fiyat karşılaştırması' },
+    ],
   },
   {
     icon: '📍',
@@ -54,6 +89,13 @@ const travelFeatures = [
     description: 'Her turistik noktanın yakınındaki en iyi restoranlar, giriş ücretleri, saatleri ve yemek önerileri.',
     color: 'border-violet-500/20',
     iconBg: 'bg-violet-500/15',
+    accentColor: 'text-violet-400',
+    details: [
+      { icon: '🏛️', text: 'Turistik yer yakını restoranlar' },
+      { icon: '🕐', text: 'Giriş saatleri ve ücretleri' },
+      { icon: '🗺️', text: 'Harita üzerinde yürüyüş rotaları' },
+      { icon: '📸', text: 'Fotoğraf noktaları ve öneriler' },
+    ],
   },
   {
     icon: '✈️',
@@ -61,6 +103,13 @@ const travelFeatures = [
     description: 'Skyscanner ile uçuş, Booking.com ile otel ve araç kiralama bağlantıları tek ekranda.',
     color: 'border-sky-500/20',
     iconBg: 'bg-sky-500/15',
+    accentColor: 'text-sky-400',
+    details: [
+      { icon: '🛫', text: 'En uygun uçuş fiyatları' },
+      { icon: '🏨', text: 'Otel karşılaştırma ve rezervasyon' },
+      { icon: '🚗', text: 'Araç kiralama seçenekleri' },
+      { icon: '🚌', text: 'Havaalanı transfer bilgileri' },
+    ],
   },
   {
     icon: '🌿',
@@ -68,21 +117,19 @@ const travelFeatures = [
     description: 'Toplu taşıma rehberi, bisiklet paylaşımı ve karbon ayak izi rozetleri ile sürdürülebilir seyahat.',
     color: 'border-emerald-500/20',
     iconBg: 'bg-emerald-500/15',
+    accentColor: 'text-emerald-400',
+    details: [
+      { icon: '🚇', text: 'Toplu taşıma rehberi ve bilet bilgileri' },
+      { icon: '🚲', text: 'Bisiklet paylaşım noktaları' },
+      { icon: '🌱', text: 'Karbon ayak izi hesaplayıcı' },
+      { icon: '🏅', text: 'Sürdürülebilirlik rozetleri' },
+    ],
   },
-];
-
-const menuPhrases = [
-  { lang: '🇫🇷 Fransızca', phrase: "L'addition, s'il vous plaît", translation: 'Hesabı alabilir miyim, lütfen' },
-  { lang: '🇮🇹 İtalyanca', phrase: 'Il conto, per favore', translation: 'Hesabı alabilir miyim, lütfen' },
-  { lang: '🇯🇵 Japonca', phrase: 'お会計お願いします', translation: 'Hesabı alabilir miyim, lütfen' },
-  { lang: '🇪🇸 İspanyolca', phrase: 'La cuenta, por favor', translation: 'Hesabı alabilir miyim, lütfen' },
-  { lang: '🇩🇪 Almanca', phrase: 'Die Rechnung, bitte', translation: 'Hesabı alabilir miyim, lütfen' },
-  { lang: '🇬🇷 Yunanca', phrase: 'Τον λογαριασμό, παρακαλώ', translation: 'Hesabı alabilir miyim, lütfen' },
 ];
 
 export default function TravelShowcase() {
   const [activeDestination, setActiveDestination] = useState(0);
-  const [activePhraseIndex, setActivePhraseIndex] = useState(0);
+  const [activeFeatureTab, setActiveFeatureTab] = useState(0);
 
   return (
     <section id="travel" className="relative py-16 md:py-24 overflow-hidden">
@@ -113,7 +160,7 @@ export default function TravelShowcase() {
         </AnimateOnScroll>
 
         {/* Main Travel Feature: Destinations + Phone Mockup */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <AnimateOnScroll animation="fade-right">
             <div>
               <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-4">
@@ -267,9 +314,9 @@ export default function TravelShowcase() {
           </AnimateOnScroll>
         </div>
 
-        {/* Feature Grid: 8 Travel Features */}
-        <AnimateOnScroll animation="fade-up" className="mb-16">
-          <div className="text-center mb-12">
+        {/* Tabbed Features Section */}
+        <AnimateOnScroll animation="fade-up">
+          <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-4">
               Seyahat Planlayıcının{' '}
               <span className="bg-gradient-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
@@ -280,108 +327,75 @@ export default function TravelShowcase() {
               Sadece restoran değil, şehrin tüm gastronomik dokusunu keşfetmeni sağlayan kapsamlı araçlar.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {travelFeatures.map((feature) => (
-              <div
+
+          {/* Tab Navigation */}
+          <div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide" role="tablist" aria-label="Seyahat özellikleri">
+            {travelFeatures.map((feature, index) => (
+              <button
                 key={feature.title}
-                className={`glass rounded-2xl p-5 border ${feature.color} group hover:scale-[1.02] transition-all duration-300`}
+                role="tab"
+                aria-selected={activeFeatureTab === index}
+                aria-controls={`travel-tabpanel-${index}`}
+                id={`travel-tab-${index}`}
+                onClick={() => setActiveFeatureTab(index)}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border whitespace-nowrap transition-all duration-300 flex-shrink-0 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 ${
+                  activeFeatureTab === index
+                    ? `glass ${feature.color} shadow-lg ${feature.accentColor} scale-[1.02]`
+                    : 'bg-white/5 border-white/5 text-dark-400 hover:bg-white/5 hover:text-dark-200'
+                }`}
               >
-                <div className={`w-12 h-12 rounded-xl ${feature.iconBg} flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform`}>
-                  {feature.icon}
-                </div>
-                <h4 className="text-white font-bold text-sm mb-2">{feature.title}</h4>
-                <p className="text-xs text-dark-400 leading-relaxed">{feature.description}</p>
-              </div>
+                <span className="text-base">{feature.icon}</span>
+                <span className="hidden sm:inline">{feature.title}</span>
+              </button>
             ))}
           </div>
-        </AnimateOnScroll>
 
-        {/* Menu Phrases Section */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <AnimateOnScroll animation="fade-right" className="flex justify-center">
-            <div className="relative w-full max-w-md">
-              <div className="glass rounded-3xl p-6 relative z-10 border border-cyan-500/10">
-                {/* Menu Translation Card */}
-                <div className="flex items-center gap-2 mb-5">
-                  <div className="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center">
-                    <span>🗣️</span>
+          {/* Tab Content — fixed height, content swaps in place */}
+          <div
+            role="tabpanel"
+            id={`travel-tabpanel-${activeFeatureTab}`}
+            aria-labelledby={`travel-tab-${activeFeatureTab}`}
+            className="glass rounded-2xl border border-white/5 p-6 md:p-8 min-h-[220px]"
+          >
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              {/* Left: Feature Info */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className={`w-12 h-12 rounded-xl ${travelFeatures[activeFeatureTab].iconBg} flex items-center justify-center text-2xl`}>
+                    {travelFeatures[activeFeatureTab].icon}
                   </div>
                   <div>
-                    <p className="text-white font-semibold text-sm">Menü Çeviri Kartları</p>
-                    <p className="text-xs text-dark-400">8 dilde restoran cümleleri</p>
+                    <h4 className="text-white font-bold text-lg">{travelFeatures[activeFeatureTab].title}</h4>
                   </div>
                 </div>
-
-                <div className="space-y-2.5">
-                  {menuPhrases.map((phrase, index) => (
-                    <button
-                      key={phrase.lang}
-                      onClick={() => setActivePhraseIndex(index)}
-                      className={`w-full text-left rounded-xl p-3 border transition-all duration-300 ${
-                        activePhraseIndex === index
-                          ? 'bg-cyan-500/10 border-cyan-500/20'
-                          : 'bg-white/5 border-white/5 hover:bg-white/5'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="text-xs font-medium text-dark-200">{phrase.lang}</span>
-                        {activePhraseIndex === index && (
-                          <span className="text-[8px] px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400">🔊 Sesli</span>
-                        )}
-                      </div>
-                      <p className={`text-sm font-medium transition-colors ${
-                        activePhraseIndex === index ? 'text-cyan-300' : 'text-dark-400'
-                      }`}>
-                        &ldquo;{phrase.phrase}&rdquo;
-                      </p>
-                      {activePhraseIndex === index && (
-                        <p className="text-[10px] text-dark-500 mt-1 italic">→ {phrase.translation}</p>
-                      )}
-                    </button>
-                  ))}
+                <p className="text-dark-300 leading-relaxed mb-6">
+                  {travelFeatures[activeFeatureTab].description}
+                </p>
+                {/* Quick Stats Row */}
+                <div className="flex items-center gap-4 text-xs text-dark-400">
+                  <span className="flex items-center gap-1">🌍 30+ Şehir</span>
+                  <span className="w-1 h-1 rounded-full bg-dark-500" />
+                  <span className="flex items-center gap-1">🍽️ 100+ Yemek</span>
+                  <span className="w-1 h-1 rounded-full bg-dark-500" />
+                  <span className="flex items-center gap-1">⭐ 200+ Restoran</span>
                 </div>
               </div>
-            </div>
-          </AnimateOnScroll>
 
-          <AnimateOnScroll animation="fade-left">
-            <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-cyan-500/20 mb-6">
-                <span className="text-sm">🗣️</span>
-                <span className="text-sm text-cyan-300">Dil Desteği</span>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-6">
-                8 Dilde{' '}
-                <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
-                  Menü Çevirileri
-                </span>
-              </h3>
-              <p className="text-dark-300 mb-8 leading-relaxed">
-                Yabancı bir restoranda ne sipariş edeceğini bilemiyor musun? Fransızca, İtalyanca,
-                Japonca, İspanyolca, İngilizce, Arapça, Almanca ve Yunanca restoran cümlelerini
-                anında gör. &quot;Hesap alabilir miyim?&quot; den &quot;Vejetaryen menünüz var mı?&quot; ya kadar
-                her duruma hazır ol.
-              </p>
-
-              <div className="space-y-4">
-                {[
-                  { icon: '📖', title: 'Restoran Cümleleri', desc: 'Sipariş, hesap, alerji bildirimi ve daha fazlası' },
-                  { icon: '🔊', title: 'Sesli Telaffuz', desc: 'Doğru telaffuz için ses desteği' },
-                  { icon: '🍽️', title: 'Yemek İsimleri', desc: 'Yerel yemeklerin açıklamaları ve Türkçe karşılıkları' },
-                  { icon: '⚠️', title: 'Alerji Bildirimi', desc: '"Fıstık alerjim var" gibi kritik cümlelerin çevirileri' },
-                ].map((item) => (
-                  <div key={item.title} className="flex items-start gap-4 p-3 glass rounded-xl border border-white/5">
-                    <span className="text-xl flex-shrink-0">{item.icon}</span>
-                    <div>
-                      <h4 className="text-white font-semibold text-sm">{item.title}</h4>
-                      <p className="text-xs text-dark-400">{item.desc}</p>
-                    </div>
+              {/* Right: Feature Details */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {travelFeatures[activeFeatureTab].details.map((detail) => (
+                  <div
+                    key={detail.text}
+                    className={`flex items-start gap-3 p-3 rounded-xl bg-white/5 border ${travelFeatures[activeFeatureTab].color}`}
+                  >
+                    <span className="text-lg flex-shrink-0">{detail.icon}</span>
+                    <p className="text-sm text-dark-200">{detail.text}</p>
                   </div>
                 ))}
               </div>
             </div>
-          </AnimateOnScroll>
-        </div>
+          </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );
