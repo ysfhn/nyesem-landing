@@ -47,13 +47,6 @@ const benefits = [
   },
 ];
 
-const stats = [
-  { value: '10.000+', label: 'Aktif Kullanıcı', icon: '👥' },
-  { value: '50.000+', label: 'Aylık Keşif', icon: '🔍' },
-  { value: '%85', label: 'Geri Dönüş Oranı', icon: '🔄' },
-  { value: '20+', label: 'Şehir', icon: '🌍' },
-];
-
 export default function RestaurantBusiness() {
   return (
     <section id="restaurants" className="relative py-16 md:py-24 overflow-hidden">
@@ -206,41 +199,24 @@ export default function RestaurantBusiness() {
           </AnimateOnScroll>
         </div>
 
-        {/* Benefits Grid */}
+        {/* Benefits — compact inline row */}
         <AnimateOnScroll animation="fade-up" className="mb-12">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-4">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-display font-extrabold text-white mb-3">
               Neden{' '}
               <span className="gradient-text">Nyesem?</span>
             </h3>
-            <p className="text-dark-300 max-w-2xl mx-auto">
-              Restoranınız için gereken tüm araçlar tek platformda.
-            </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {benefits.map((b) => (
               <div
                 key={b.title}
-                className={`glass rounded-2xl p-6 border ${b.color} group hover:scale-[1.02] transition-all duration-300`}
+                className={`glass rounded-xl p-4 border ${b.color} text-center group hover:scale-[1.03] transition-all duration-300`}
               >
-                <div className={`w-12 h-12 rounded-xl ${b.iconBg} flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform`}>
+                <div className={`w-10 h-10 rounded-lg ${b.iconBg} flex items-center justify-center text-xl mb-3 mx-auto group-hover:scale-110 transition-transform`}>
                   {b.icon}
                 </div>
-                <h4 className="text-white font-bold mb-2">{b.title}</h4>
-                <p className="text-sm text-dark-400 leading-relaxed">{b.description}</p>
-              </div>
-            ))}
-          </div>
-        </AnimateOnScroll>
-
-        {/* Stats Row */}
-        <AnimateOnScroll animation="fade-up" className="mb-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {stats.map((s) => (
-              <div key={s.label} className="glass rounded-2xl p-6 border border-white/5 text-center group hover:border-brand-400/20 transition-all">
-                <span className="text-3xl block mb-2">{s.icon}</span>
-                <p className="text-2xl md:text-3xl font-display font-extrabold text-white mb-1">{s.value}</p>
-                <p className="text-sm text-dark-400">{s.label}</p>
+                <h4 className="text-white font-bold text-xs mb-1">{b.title}</h4>
               </div>
             ))}
           </div>
